@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Smart Civic Portal</title>
+ <link rel="stylesheet" href="./home.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><img src="./assets/fav-icon.png" alt="" width="50px"> </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="#"><i class="fa-regular fa-house"></i> home </a></li>
+      <!-- <li><a href="#features"><i class="fa-solid fa-paperclip"></i> Features</a></li> -->
+      
+      <li><a href="#timeline"><i class="fa-solid fa-list"></i> How It Works</a></li>
+      <!-- <li><a href="#map-section"><i class="fa-solid fa-map"></i> Locations</a></li> -->
+      <!-- <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li> -->
+      <li><a href="./Best one(1)/admin_dashboard/about.html"><i class="fa-solid fa-circle-exclamation"></i>About Us</a></li>
+      <li class="language-selector">
+        <select id="language-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="es">Telugu</option>
+        </select>
+      </li>
+      <li class="mobile-login"><button class="login_btn"><a href="./Best one(1)/admin_dashboard/login.html" class="login_anchor">Login  <i class="fa-solid fa-users"></i> </a></button></li>
+    </ul>
+    <!-- keep desktop login button separate -->
+    <!-- <button class="login_btn desktop-login"><a href="./Best one(1)/admin_dashboard/login.html" class="login_anchor">Login  <i class="fa-solid fa-users"></i> </a></button> -->
+  </nav>
+
+  <!-- Modal Alert -->
+  <div id="alertModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-icon">🔔</div>
+      <h2>Important Notice</h2>
+      <p>Welcome to Smart Civic Portal! This platform helps you report and track civic issues efficiently. Your feedback drives better governance.</p>
+      <button class="modal-btn">Got it</button>
+    </div>
+  </div>
+<!-- 
+  <section class="hero">
+    <div class="hero-text-container">
+      <div class="slider">
+        <img src="./assets/village1.jpg.png" alt="Village View 1">
+        <img src="./assets/village2.png" alt="Village View 2">
+        <img src="./assets/village3.png" alt="Village View 3">
+      </div>
+      <div class="hero-text"> -->
+
+        
+  <!-- video section added after features -->
+  <section class="video-section">
+    <video src="./assets/clip.mp4" width="100%" height="40%" autoplay muted loop></video>
+  </section>
+
+        <!-- <h1>Digital Governance Made Simple</h1> -->
+        <p>
+          <!-- A single smart platform connecting citizens, officers, and administrators
+          for faster services, transparency, and better governance. -->
+        </p>
+        <!-- <div class="actions">
+          <button class="btn" style="color: white; cursor: pointer;">Get Started</button>
+          <button class="btn" style="color: white; cursor: pointer; ">Learn More</button>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Timeline -->
+  <section class="timeline-section" id="timeline">
+    <h2>How It Works</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-marker">1</div>
+        <div class="timeline-content">
+          <h3>Report Issue</h3>
+          <p>File a complaint with photos, location, and description</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">2</div>
+        <div class="timeline-content">
+          <h3>Assignment</h3>
+          <p>Issue is assigned to relevant department officer</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">3</div>
+        <div class="timeline-content">
+          <h3>Processing</h3>
+          <p>Officer investigates and takes action</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">4</div>
+        <div class="timeline-content">
+          <h3>Resolution</h3>
+          <p>Complaint resolved and you receive updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Use Our Platform?</h2>
+    <div class="feature-grid">
+      <div class="card" ><div class="icon">👤</div><h3 >Citizen Services</h3><p>Submit requests, track complaints, and access services online.</p></div>
+      <div class="card"><div class="icon">🛂</div><h3>Our Vision</h3><p>To empower rural communities with a reliable digital platform that ensures every issue is heard, tracked, and resolved efficiently.
+
+</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Our Mission
+</h3><p>To simplify complaint reporting, improve communication, and enable data-driven decision making for better governance.
+
+</p></div>
+      <div class="card">
+        <div class="icon">🔒</div><h3>What We Do</h3><p>We provide a smart web-based solution where citizens can report issues, track progress, and receive real-time updates.
+
+</p></div>
+    </div>
+  </section>
+
+
+ 
+    
+  </section>
+  <section class="stats-section">
+
+    <div class="stats-grid">
+
+      <div class="stat">
+        <small>Compalints Submitted </small>
+        <div class="number">1,250</div>
+        <div class="label">Simulated Reports</div>
+      </div>
+
+      <div class="stat">
+        <small>Issues Resolved </small>
+        <div class="number">92%</div>
+        <div class="label">Resolution Rate</div>
+      </div>
+
+      <div class="stat">
+        <small>Active Citizens</small>
+        <div class="number">320+</div>
+        <div class="label">Registrated Users</div>
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <div class="arrow">←</div>
+<!-- 
+      <div class="description">
+        That's equivalent to the greenhouse gas emissions from
+        319,275,849 miles driven by an average gasoline-powered passenger vehicle.
+      </div> -->
+
+      <div class="arrow">→</div>
+    </div>
+
+  </section>
+
+  <!-- ****Citizen Procejure****** -->
+
+ 
+
+   
+</header>
+
+<div class="container">
+    <h2>A transparent and accountable system of grievance redressal</h2>
+
+    <div class="carousel">
+        <!-- <div class="arrow left-arrow">&#8249;</div> -->
+
+        <div class="icons">
+            <div class="icon">📷</div>
+            <div class="icon">📍</div>
+            <!-- <div class="icon">🙋‍♂️</div> -->
+            <!-- <div class="icon">✅</div> -->
+            <div class="icon">📊</div>
+            <div class="icon">🔔</div>
+        </div>
+
+        <!-- <div class="arrow right-arrow">&#8250;</div> -->
+    </div>
+
+    <div class="content-text">
+        <h3>Locate the complaint with ease</h3>
+        <p>
+            The app can pinpoint the location of the complaint with accuracy using the
+            geo-location of the picture, which will lead to faster resolution of the complaint.
+        </p>
+    </div>
+</div>
+
+<!-- Map Integration Section -->
+<section class="map-section" id="map-section">
+  <h2>Service Coverage Areas</h2>
+  <div class="map-container">
+    <div id="map" style="height: 500px; background: #e0e0e0; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #666;">
+      📍 Interactive Map - Multiple rural jurisdictions covered
+    </div>
+    <div class="jurisdictions">
+      <h3>Service Zones</h3>
+      <div class="zone-list">
+        <div class="zone-item">🏘️ North Zone - 45 Villages</div>
+        <div class="zone-item">🏘️ South Zone - 38 Villages</div>
+        <div class="zone-item">🏘️ East Zone - 52 Villages</div>
+        <div class="zone-item">🏘️ West Zone - 41 Villages</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- *******Footer******* -->
+
+  <footer id="contact">
+    <p>© 2026 Smart Civic Portal | Designed for Digital India </p>
+    <p>Email Id: Ruralgovernance@gmail.com</p>
+
+    <ul class=" logos ">
+  <li class="list">
+    <a href="#" class="links">
+      <i class="fab fa-facebook-f icon"></i>    </a>
+  </li>
+  <li class="list">
+    <a href="#"class="links"><i class="fab fa-twitter icon"></i></a>
+  </li >
+  <li class="list">
+    <a href="#"class="links"><i class="fab fa-linkedin-in icon"></i></a></li>
+  <li class="list">
+    <a href="#"class="links"><i class="fab fa-google-plus-g icon"></i></a></li>
+</ul>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navUl = document.querySelector('nav ul');
+      
+      // Hamburger menu functionality
+      hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('open');
+      });
+
+      // Close menu when a link is clicked
+      const navLinks = document.querySelectorAll('nav ul li a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navUl.classList.remove('open');
+        });
+      });
+
+      // Modal Alert functionality
+      const modal = document.getElementById('alertModal');
+      const modalBtn = document.querySelector('.modal-btn');
+      const closeModal = document.querySelector('.close-modal');
+
+      // Show modal on page load
+      window.addEventListener('load', () => {
+        modal.classList.add('show');
+      });
+
+      // Close modal on button click
+      if (modalBtn) {
+        modalBtn.addEventListener('click', () => {
+          modal.classList.remove('show');
+        });
+      }
+
+      // Close modal on X click
+      if (closeModal) {
+        closeModal.addEventListener('click', () => {
+          modal.classList.remove('show');
+        });
+      }
+
+      // Close modal on background click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+
+      // Language Selector functionality
+      const languageSelect = document.getElementById('language-select');
+      if (languageSelect) {
+        // Load saved language from localStorage
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        languageSelect.value = savedLanguage;
+        
+        languageSelect.addEventListener('change', (e) => {
+          const selectedLang = e.target.value;
+          localStorage.setItem('selectedLanguage', selectedLang);
+          
+          // Implement translation logic here
+          const translations = {
+            en: {
+              'How It Works': 'How It Works',
+              'Locations': 'Locations',
+              'Contact': 'Contact',
+              'About Us': 'About Us'
+            },
+            hi: {
+              'How It Works': 'कैसे काम करता है',
+              'Locations': 'स्थान',
+              'Contact': 'संपर्क',
+              'About Us': 'हमारे बारे में'
+            },
+            es: {
+              'How It Works': 'Cómo funciona',
+              'Locations': 'Ubicaciones',
+              'Contact': 'Contacto',
+              'About Us': 'Acerca de nosotros'
+            }
+          };
+          
+          console.log('Language changed to:', selectedLang);
+          // Additional translation logic can be added here
+        });
+      }
+
+      // Carousel functionality
+      const leftArrow = document.querySelector('.left-arrow');
+      const rightArrow = document.querySelector('.right-arrow');
+      const iconsContainer = document.querySelector('.icons');
+      let scrollPosition = 0;
+
+      if (leftArrow && rightArrow && iconsContainer) {
+        leftArrow.addEventListener('click', () => {
+          scrollPosition -= 150;
+          iconsContainer.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+          });
+        });
+
+        rightArrow.addEventListener('click', () => {
+          scrollPosition += 150;
+          iconsContainer.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+          });
+        });
+      }
+
+      // Map zone item click functionality
+      const zoneItems = document.querySelectorAll('.zone-item');
+      zoneItems.forEach(item => {
+        item.addEventListener('click', function() {
+          alert('You selected: ' + this.textContent);
+          // Additional logic for handling zone selection
+        });
+      });
+    });
+  </script>
+</body>
+</html>

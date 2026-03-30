@@ -1,0 +1,133 @@
+<!-- reports.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reports</title>
+  <link rel="stylesheet" href="./base.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="top-bar">
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <div class="logo"><img src="/Best one(1)/admin_dashboard/logo.html.jpeg" alt="" width="50px"></div>
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <ul class="nav-links">
+    <li><a href="/Best one(1)/admin_dashboard/officer_home.html"><i class="fa-regular fa-house"></i>Home</a></li>
+    <li><a href="complaints.html"><i class="fa-solid fa-file"></i>Complaints</a></li>
+    <li><a href="workers.html"><i class="fa-solid fa-person-digging"></i>Workers</a></li>
+    <li><a href="warrdstats.html"><i class="fa-solid fa-chart-column"></i>Ward stats</a></li>
+    <li><a href="reports.html"><i class="fa-solid fa-flag"></i>Reports</a></li>
+    <!-- <li><a href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li> -->
+    <li><a href="profile.html"><i class="fa-regular fa-address-card"></i>Profile</a></li>
+  </ul>
+</div>
+<div class="page-wrapper">
+    <div class="section-title"><h2>Citizen feedback reports</h2></div>
+    <div class="section-sub"><h3> positive (6) and negative (7) reviews. </h3></div>
+
+    <!-- 2 TOGGLE BUTTONS -->
+    <div class="toggle-buttons">
+      <button class="toggle-btn active" onclick="showPositive()">Positive</button>
+      <button class="toggle-btn" onclick="showNegative()">Negative</button>
+    </div>
+
+    <!-- POSITIVE REVIEWS (6 GREEN CARDS - default) -->
+    <div id="positive-content" class="content-section active">
+      <div class="reviews-grid">
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Ravi Kumar</h3>
+          <p class="review-text">"Road repair team was excellent! Fixed pothole in 4 hours. 5⭐"</p>
+        </div>
+
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Priya Sharma</h3>
+          <p class="review-text">"Drainage cleared quickly. Ward stays clean now. 5⭐"</p>
+        </div>
+
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Amit Patel</h3>
+          <p class="review-text">"Street lights fixed overnight. Much safer. 5⭐"</p>
+        </div>
+
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Sneha Reddy</h3>
+          <p class="review-text">"Garbage pickup on time daily. Perfect! 5⭐"</p>
+        </div>
+
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Vijay Singh</h3>
+          <p class="review-text">"Water leak resolved same day. Great work! 5⭐"</p>
+        </div>
+
+        <div class="info-card review-card positive-review">
+          <h3 class="citizen-name">Lakshmi Devi</h3>
+          <p class="review-text">"Excellent app updates. Very helpful! 5⭐"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEGATIVE REVIEWS (7 RED CARDS) -->
+    <div id="negative-content" class="content-section">
+      <div class="reviews-grid">
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Suresh Babu</h3>
+          <p class="review-text">"Road broken 1 week. No response. 1⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Meena Joshi</h3>
+          <p class="review-text">"Drainage overflow every rain. 1⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Rajesh Nair</h3>
+          <p class="review-text">"Street light out 10 days. 1⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Kavita M</h3>
+          <p class="review-text">"Garbage not collected 3 days. 1⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Anil Gupta</h3>
+          <p class="review-text">"Water cut 2 days. No notice. 2⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Sunita Rani</h3>
+          <p class="review-text">"Wrong status in app. 1⭐"</p>
+        </div>
+
+        <div class="info-card review-card negative-review">
+          <h3 class="citizen-name">Mohan Das</h3>
+          <p class="review-text">"Workers absent often. 1⭐"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.toggle-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    function showPositive() {
+      document.getElementById('positive-content').classList.add('active');
+      document.getElementById('negative-content').classList.remove('active');
+      document.querySelector('.toggle-btn:nth-child(1)').classList.add('active');
+      document.querySelector('.toggle-btn:nth-child(2)').classList.remove('active');
+    }
+
+    function showNegative() {
+      document.getElementById('negative-content').classList.add('active');
+      document.getElementById('positive-content').classList.remove('active');
+      document.querySelector('.toggle-btn:nth-child(2)').classList.add('active');
+      document.querySelector('.toggle-btn:nth-child(1)').classList.remove('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="./base.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="top-bar">
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <div class="logo"><img src="/Best one(1)/./admin_dashboard/logo.html.jpeg"alt="" width="50px"></div>
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <ul class="nav-links">
+    <li><a href="/Best one(1)/admin_dashboard/officer_home.html"><i class="fa-regular fa-house"></i>Home</a></li>
+    <li><a href="complaints.html"><i class="fa-solid fa-file"></i>Complaints</a></li>
+    <li><a href="workers.html"><i class="fa-solid fa-person-digging"></i>Workers</a></li>
+    <li><a href="warrdstats.html"><i class="fa-solid fa-chart-column"></i>Ward stats</a></li>
+    <li><a href="reports.html"><i class="fa-solid fa-flag"></i>Reports</a></li>
+    <!-- <li><a href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li> -->
+    <li><a href="profile.html"><i class="fa-regular fa-address-card"></i>Profile</a></li>
+  </ul>
+</div>
+
+   <div class="page-wrapper">
+    <h2><div class="section-title">OFFICER PROFILE</div></h2>
+   
+
+    <div class="profile-container">
+      <!-- MAIN PROFILE -->
+      <div class="info-card profile-card">
+        <!-- <div class="profile-photo">MC</div> -->
+        <div class="officer-name">Akhil Teja</div>
+        <div class="designation">Municipal Complaints Officer</div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Employee ID</span>
+          <span class="detail-value">MC-1042</span>
+        </div>
+
+         <div class="detail-row">
+    <span class="detail-label">Post Position</span>
+    <span class="detail-value">Grievance Redressal Officer</span>
+  </div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Department</span>
+          <span class="detail-value">Urban Development</span>
+        </div>
+        
+        <div class="detail-row">
+    <span class="detail-label">Area</span>
+    <span class="detail-value">East Hyderabad Zone</span>
+  </div>
+
+    <div class="detail-row">
+    <span class="detail-label">Incharge Area</span>
+    <span class="detail-value">Ward 1-6 (Garbage, Sanitation, Complaints)</span>
+  </div>
+
+  <div class="detail-row">
+    <span class="detail-label">Experience</span>
+    <span class="detail-value">2 Years 6 Months</span>
+  </div>
+
+        <!-- <div class="detail-row">
+          <span class="detail-label">Ward Responsibility</span>
+          <span class="detail-value">Ward 1-6</span>
+        </div> -->
+        
+        <div class="detail-row">
+          <span class="detail-label">Joining Date</span>
+          <span class="detail-value">15 Jan 2024</span>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="info-card profile-card">
+        <div class="setting-category" style="margin-bottom: 24px;">Contact Information</div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Official Email</span>
+          <span class="detail-value">akhilteja53@gmail.com</span>
+        </div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Mobile Number</span>
+          <span class="detail-value">+91 79816 23276</span>
+        </div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Office Location</span>
+          <span class="detail-value">Municipal Office, Hyderabad</span>
+        </div>
+        
+        <div class="detail-row">
+          <span class="detail-label">Emergency Contact</span>
+          <span class="detail-value">+91 67890 12345 </span>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE STATS -->
+      <div class="info-card profile-card" style="grid-column: 1 / -1;">
+        <div class="setting-category" style="text-align: center; margin-bottom: 20px;">This Month Performance</div>
+        <div class="stats-row">
+          <div class="stat-box">
+            <p class="stat-number">247</p>
+            <p class="stat-label">Complaints Handled</p>
+          </div>
+          <div class="stat-box">
+            <p class="stat-number">98%</p>
+            <p class="stat-label">Resolution Rate</p>
+          </div>
+          <div class="stat-box">
+            <p class="stat-number">4.2h</p>
+            <p class="stat-label">Avg Response</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGOUT BUTTON -->
+    <div class="logout-section">
+      <a href="/home.html" class="logout-btn">Logout</a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.toggle-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

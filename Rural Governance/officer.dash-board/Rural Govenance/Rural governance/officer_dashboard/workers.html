@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workers</title>
+  <link rel="stylesheet" href="./base.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <div class="logo"><img src="/Best one(1)/admin_dashboard/logo.html.jpeg" alt="" width="50px"></div>
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <ul class="nav-links">
+    <li><a href="/Best one(1)/admin_dashboard/officer_home.html"><i class="fa-regular fa-house"></i>Home</a></li>
+    <li><a href="complaints.html"><i class="fa-solid fa-file"></i>Complaints</a></li>
+    <li><a href="workers.html"><i class="fa-solid fa-person-digging"></i>Workers</a></li>
+    <li><a href="warrdstats.html"><i class="fa-solid fa-chart-column"></i>Ward stats</a></li>
+    <li><a href="reports.html"><i class="fa-solid fa-flag"></i>Reports</a></li>
+    <!-- <li><a href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li> -->
+    <li><a href="profile.html"><i class="fa-regular fa-address-card"></i>Profile</a></li>
+  </ul>
+</div>
+
+  <div class="page-wrapper">
+    <h2><div class="section-title">WOKERS ALLOCATION</div></h2>
+    <h2><div class="section-sub">Monitor field workers and their assigned complaints.</div></h2>
+
+    <div class="card-row">
+      <div class="info-card">
+        <h3>Active workers</h3>
+        <p>56</p>
+      </div>
+      <div class="info-card">
+        <h3>Teams on duty</h3>
+        <p>12</p>
+      </div>
+    </div>
+
+    <div class="section-title">Today's assignments</div>
+    <div class="section-sub">Teams and their primary tasks.</div>
+
+    <div class="teams-list">
+      <div class="info-card team-card">
+        <h3 class="team-name">TEAM-A</h3>
+        <p class="team-task">Road repair near Gandhi statue.</p>
+      </div>
+
+      <div class="info-card team-card">
+        <h3 class="team-name">TEAM-B</h3>
+        <p class="team-task">Drainage cleaning in 3rd lane.</p>
+      </div>
+
+      <div class="info-card team-card">
+        <h3 class="team-name">TEAM-C</h3>
+        <p class="team-task">Street light inspection in 2nd lane.</p>
+      </div>
+
+      <div class="info-card team-card">
+        <h3 class="team-name">TEAM-D</h3>
+        <p class="team-task">Garbage collection in Ward 4 market area.</p>
+      </div>
+
+      <div class="info-card team-card">
+        <h3 class="team-name">TEAM-E</h3>
+        <p class="team-task">Water pipe leakage fix on Main Road.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.toggle-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

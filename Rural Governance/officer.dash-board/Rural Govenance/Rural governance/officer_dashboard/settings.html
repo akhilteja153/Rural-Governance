@@ -1,0 +1,137 @@
+<!-- settings.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" href="./base.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <div class="logo"><img src="/Rural governance/assets/WhatsApp Image 2026-01-08 at 10.44.09 AM.jpeg" alt="" width="50px"></div>
+  <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+  <ul class="nav-links">
+    <li><a href="home.html"><i class="fa-regular fa-house"></i>Home</a></li>
+    <li><a href="complaints.html"><i class="fa-solid fa-file"></i>Complaints</a></li>
+    <li><a href="workers.html"><i class="fa-solid fa-person-digging"></i>Workers</a></li>
+    <li><a href="warrdstats.html"><i class="fa-solid fa-chart-column"></i>Ward stats</a></li>
+    <li><a href="reports.html"><i class="fa-solid fa-flag"></i>Reports</a></li>
+    <!-- <li><a href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li> -->
+    <li><a href="profile.html"><i class="fa-regular fa-address-card"></i>Profile</a></li>
+  </ul>
+</div>
+    <div class="settings-grid">
+      <!-- NOTIFICATIONS -->
+      <div class="info-card setting-card">
+        <div class="setting-category">Notifications</div>
+        <div class="setting-item">
+          <span class="setting-label">Email alerts for new complaints</span>
+          <div class="toggle-switch active">
+            <div class="toggle-knob"></div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">SMS for urgent issues</span>
+          <div class="toggle-switch">
+            <div class="toggle-knob"></div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Daily summary report time</span>
+          <span class="setting-value">7:00 PM</span>
+        </div>
+      </div>
+
+      <!-- DASHBOARD -->
+      <div class="info-card setting-card">
+        <div class="setting-category">Dashboard</div>
+        <div class="setting-item">
+          <span class="setting-label">Default landing page</span>
+          <span class="setting-value">Complaints</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Cards per row</span>
+          <span class="setting-value">4</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Auto-refresh interval</span>
+          <span class="setting-value">5 minutes</span>
+        </div>
+      </div>
+
+      <!-- APPEARANCE -->
+      <div class="info-card setting-card">
+        <div class="setting-category">Appearance</div>
+        <div class="setting-item">
+          <span class="setting-label">Dark mode</span>
+          <div class="toggle-switch">
+            <div class="toggle-knob"></div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Font size</span>
+          <span class="setting-value">Medium</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Language</span>
+          <span class="setting-value">English</span>
+        </div>
+      </div>
+
+      <!-- SECURITY -->
+      <div class="info-card setting-card">
+        <div class="setting-category">Security</div>
+        <div class="setting-item">
+          <span class="setting-label">Two-factor authentication</span>
+          <div class="toggle-switch active">
+            <div class="toggle-knob"></div>
+          </div>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Auto-logout after</span>
+          <span class="setting-value">30 minutes</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Last password change</span>
+          <span class="setting-value">15 days ago</span>
+        </div>
+      </div>
+
+      <!-- DATA -->
+      <div class="info-card setting-card">
+        <div class="setting-category">Data & Privacy</div>
+        <div class="setting-item">
+          <span class="setting-label">Backup frequency</span>
+          <span class="setting-value">Daily at 2 AM</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Data retention period</span>
+          <span class="setting-value">2 years</span>
+        </div>
+        <div class="setting-item">
+          <span class="setting-label">Anonymous complaints</span>
+          <div class="toggle-switch active">
+            <div class="toggle-knob"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAVE BUTTON -->
+    <div class="save-btn">
+      <button class="save-button" onclick="saveSettings()">Save All Changes</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.toggle-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
